@@ -1,0 +1,24 @@
+[project]
+name = "why-did-i-blunder"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "scikit-learn>=1.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.4",
+    "pre-commit>=4.3.0",
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-format
+        name: Format Python and Jupyter files with Ruff
+        entry: uv run ruff format
+        language: system
+        files: '\.(pyi?|ipynb)$'
